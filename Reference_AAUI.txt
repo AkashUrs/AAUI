@@ -1,0 +1,44 @@
+[1] Li, W., Li, K., & Wu, D. (2025, March). AI in Higher Education: A Survey-Based Empirical Study on Applications and Student Expectations. In 2025 14th International Conference on Educational and Information Technology (ICEIT) (pp. 501-505). IEEE. DOI: 10.1109/ICEIT64364.2025.10976153
+
+[2] Nawaz, R., Sun, Q., Shardlow, M., Kontonatsios, G., Aljohani, N. R., Visvizi, A., & Hassan, S. U. (2022). Leveraging AI and machine learning for national student survey: actionable insights from textual feedback to enhance quality of teaching and learning in UK’s higher education. Applied Sciences, 12(1), 514. https://doi.org/10.3390/app12010514
+
+[3] Chung, J., Henderson, M., Pepperell, N., Slade, C., & Liang, Y. (2024). Student perspectives on AI in Higher Education: Student Survey. https://doi.org/10.26180/27915930
+
+[4] Jingwei He, A., Zhang, Z., Anand, P., & McMinn, S. (2025). Embracing generative artificial intelligence tools in higher education: A survey study at the Hong Kong university of science and technology. Journal of Asian Public Policy, 1-25. https://doi.org/10.1080/17516234.2024.2447195
+
+[5] Tamanna, M., & Sinha, B. (2025). A conceptual analysis of artificial intelligence (AI) on academic opportunities and challenges: a case study based on higher educational institutions in Bangladesh. Quality Assurance in Education, 33(2), 218-236. https://doi.org/10.1108/QAE-03-2024-0050
+
+[6] Al Maharmah, A., Elfeky, A., Yacoub, R., Ibrahim, A., & Nemt-allah, M. (2025). Measuring ethical AI Use in higher education: Reliability and validity of the AI academic integrity scale for postgraduate students. communities, 23, 25. DOI: 10.53894/ijirss.v8i4.7928
+
+[7] Doğan, M., Celik, A., & Arslan, H. (2025). AI in higher education: Risks and opportunities from the academician perspective. European Journal of Education, 60(1), e12863. https://doi.org/10.1111/ejed.12863
+
+[8] Pacheco, A. J., Boude Figueredo, O. R., Chiappe, A., & Fontán de Bedout, L. (2025, September). AI-powered learning analytics for metacognitive and socioemotional development: a systematic review. In Frontiers in Education (Vol. 10, p. 1672901). Frontiers. https://doi.org/10.3389/feduc.2025.1672901
+
+[9] Urs, A. A. D., & PK, A. S. (2025). A multi-factor machine learning framework for predicting and profiling student academic performance using behavioral, financial, and wearable data. MethodsX, 103673. https://doi.org/10.1016/j.mex.2025.103673
+
+[10] Xu, Y., Chou, J., Zhao, W., Li, Y., Hao, Y., & Jin, H. (2025). Constructing a composite index to evaluate multidimensional variations in food security over different regions. Ambio, 54(6), 1057-1073. https://doi.org/10.1007/s13280-024-02124-2
+
+[11] Falebita, O. S., & Kok, P. J. (2025). Artificial intelligence tools usage: A structural equation modeling of undergraduates’ technological readiness, self-efficacy and attitudes. Journal for STEM Education Research, 8(2), 257-282. https://doi.org/10.1007/s41979-024-00132-1
+
+[12] Cui, Y. (2025). What influences college students using AI for academic writing?-A quantitative analysis based on HISAM and TRI theory. Computers and Education: Artificial Intelligence, 8, 100391. https://doi.org/10.1016/j.caeai.2025.100391
+
+[13] Mohan, A., Mathew, M., Malavika, K., Gutjahr, G., Menon, R., & Nedungadi, P. (2024, May). An Explainable AI model for student engagement in tablet learning. In 2024 IEEE Recent Advances in Intelligent Computational Systems (RAICS) (pp. 1-6). IEEE. DOI: 10.1109/RAICS61201.2024.10690047
+
+[14] Alavala, H. R., Reddy, V. K., Reddy, V. C., Paramasivam, C., & Ramesh, T. K. (2025, March). Educational Data Mining for Predicting Academic Outcomes Using Ensemble Techniques. In 2025 International Conference on Visual Analytics and Data Visualization (ICVADV) (pp. 63-68). IEEE. DOI: 10.1109/ICVADV63329.2025.10961471
+
+[15]Pallavi, M. S., Urs, A. A. D., Ravikala, K. G., & Hegde, V. (2024, June). Exploring the Impact of Financial Stress on Students’ Academic Performance: A Machine Learning Approach. In 2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT) (pp. 1-8). IEEE. DOI: 10.1109/ICCCNT61001.2024.10726175
+
+[16] Srilekshmi, M., Sindhumol, S., Chatterjee, S., & Bijlani, K. (2016, December). Learning analytics to identify students at-risk in MOOCs. In 2016 IEEE Eighth international conference on technology for education (T4E) (pp. 194-199). IEEE. DOI: 10.1109/T4E.2016.048
+
+[17] Hegde, V., Roshin, C., Bayari, S., Ayush, M., & Yashas, P. (2025, April). Study on Effectiveness of Assessment Methods Involved in Project-Based Learning. In 2025 12th International Conference on Computing for Sustainable Global Development (INDIACom) (pp. 1-6). IEEE. DOI: 10.23919/INDIACom66777.2025.11115540
+
+[18] Reddy, J. Y., Ram, G. S. S., Varshini, V., & Srinivas, M. (2025, February). An Empirical Evaluation of Machine Learning Models for Stroke Risk Assessment with Explainable AI. In 2025 International Conference on Artificial Intelligence and Data Engineering (AIDE) (pp. 150-157). IEEE. DOI: 10.1109/AIDE64228.2025.10987490
+
+| Purpose                                   | References                          |
+| ----------------------------------------- | ----------------------------------- |
+| AI usage surveys & attitudes              | [1], [3], [4], [5], [7], [11], [12] |
+| Survey analytics & learning analytics     | [2], [8], [16]                      |
+| Composite index methodology               | [10]                                |
+| Validation & behavioral profiling methods | [9], [13], [14], [15], [17], [18]   |
+| Ethics / integrity measurement            | [6]                                 |
+
