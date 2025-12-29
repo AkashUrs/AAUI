@@ -1,0 +1,130 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+import numpy as np
+
+sns.set(style="white", context="paper", font_scale=1.1)
+
+
+plt.figure(figsize=(8, 6))
+
+# Scatter plot
+sns.scatterplot(
+    data=df,
+    x="usage_mean",
+    y="confidence_mean",
+    hue="persona",
+    palette="viridis",
+    alpha=0.6,
+    edgecolor=None
+)
+
+# Mean reference lines
+plt.axvline(df["usage_mean"].mean(), linestyle="--", linewidth=1, color="gray")
+plt.axhline(df["confidence_mean"].mean(), linestyle="--", linewidth=1, color="gray")
+
+# Persona centroids
+centroids = df.groupby("persona")[["usage_mean", "confidence_mean"]].mean()
+plt.scatter(
+    centroids["usage_mean"],
+    centroids["confidence_mean"],
+    s=180,
+    c="black",
+    marker="X",
+    label="Centroid"
+)
+
+plt.xlabel("Mean AI Usage (Standardized)")
+plt.ylabel("Mean Confidence in AI Outputs (Standardized)")
+plt.title("AI-Interaction Persona Map")
+
+plt.legend(frameon=False)
+plt.tight_layout()
+plt.show()
+
+
+tasks = ["idea_use", "writing_use", "coding_use", "summary_use", "review_use"]
+
+heatmap_data = (
+    df.groupby("persona")[tasks]
+      .mean()
+      .reindex([
+          "AI Enthusiasts",
+          "Cautious Users",
+          "Selective Trusters",
+          "AI Skeptics"
+      ])
+)
+
+plt.figure(figsize=(10, 5))
+sns.heatmap(
+    heatmap_data,
+    cmap="viridis",
+    annot=True,
+    fmt=".2f",
+    linewidths=0.5,
+    cbar_kws={"label": "Mean AI Usage"}
+)
+
+plt.xlabel("Academic Task")
+plt.ylabel("AI-Interaction Persona")
+plt.title("Task-Level AI Usage Across Personas")
+plt.tight_layout()
+plt.show()
+
+
+df["confidence_usage_diff"] = df["confidence_mean"] - df["usage_mean"]
+
+plt.figure(figsize=(7, 5))
+
+sns.boxplot(
+    data=df,
+    x="persona",
+    y="confidence_usage_diff",
+    palette="viridis"
+)
+
+plt.axhline(0, linestyle="--", linewidth=1, color="gray")
+
+plt.ylabel("Confidence − Usage")
+plt.xlabel("AI-Interaction Persona")
+plt.title("Confidence–Usage Misalignment by Persona")
+plt.tight_layout()
+plt.show()
+
+
+fig, ax = plt.subplots(figsize=(10, 2))
+
+ax.axis("off")
+
+steps = [
+    "Survey Data\nCollection",
+    "Data Screening &\nStandardization",
+    "Multivariate\nProfiling",
+    "Persona\nInterpretation",
+    "Educational\nImplications"
+]
+
+x_positions = np.linspace(0.1, 0.9, len(steps))
+
+for x, step in zip(x_positions, steps):
+    ax.text(
+        x, 0.5, step,
+        ha="center", va="center",
+        bbox=dict(boxstyle="round", fill=False)
+    )
+
+for i in range(len(x_positions) - 1):
+    ax.annotate(
+        "",
+        xy=(x_positions[i+1]-0.06, 0.5),
+        xytext=(x_positions[i]+0.06, 0.5),
+        arrowprops=dict(arrowstyle="->")
+    )
+
+plt.title("Analytical Workflow for AI-Interaction Persona Identification")
+plt.tight_layout()
+plt.show()
+
+
+plt.savefig("Figure1_PersonaMap.pdf", dpi=300, bbox_inches="tight")
